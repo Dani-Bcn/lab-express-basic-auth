@@ -1,0 +1,11 @@
+
+<form action="/auth/signup" method="post">
+    <input type="text" name="username" placeholder="Name">
+    <input type="password" name="password" placeholder="Password">    
+    <button type="submit">Submit</button>
+    <br><br>
+    {{#if error}}
+    {{error}}
+    {{/if}}
+</form>
+
